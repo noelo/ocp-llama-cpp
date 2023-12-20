@@ -1,0 +1,19 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app: llamacpp
+    app.kubernetes.io/component: llamacpp
+    app.kubernetes.io/instance: llamacpp
+  name: llamacpp
+spec:
+  port:
+    targetPort: 8080-tcp
+  tls:
+    termination: edge
+  to:
+    kind: ""
+    name: llamacpp
+    weight: null
+status: {}
