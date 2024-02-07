@@ -15,8 +15,8 @@ spec:
       env:
       - name: MODELNAME
         value: "llama-2-7b-chat.Q4_K_M.gguf"
-      - name: MODELLOCATION
-        value: "/tmp/"
+        - name: MODELLOCATION
+          value: /mnt/models
       - name: CHAT_FORMAT
         value: ""
       volumeMounts:
